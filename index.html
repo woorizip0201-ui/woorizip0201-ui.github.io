@@ -10,12 +10,13 @@
 <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
 <style>
-  /* 본문·제목 모두 반듯한 고딕(Noto Sans KR) — 페이지에 쓰인 글자만 담은 서브셋, 굵기 100~900 */
-  @font-face{
-    font-family:'Noto Sans KR';
-    src:url('fonts/NotoSansKR-subset.woff2') format('woff2');
-    font-weight:100 900;font-style:normal;font-display:swap;
-  }
+  /* 본문·제목 모두 반듯한 고딕(Noto Sans KR) — 페이지에 쓰인 글자만 담은 서브셋.
+     굵기별 정적 파일을 하나씩 등록한다(가변 폰트 축을 지원하지 않는 브라우저에서도 굵게 보이도록). */
+  @font-face{font-family:'Noto Sans KR';src:url('fonts/NotoSansKR-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+  @font-face{font-family:'Noto Sans KR';src:url('fonts/NotoSansKR-600.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+  @font-face{font-family:'Noto Sans KR';src:url('fonts/NotoSansKR-700.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+  @font-face{font-family:'Noto Sans KR';src:url('fonts/NotoSansKR-800.woff2') format('woff2');font-weight:800;font-style:normal;font-display:swap}
+  @font-face{font-family:'Noto Sans KR';src:url('fonts/NotoSansKR-900.woff2') format('woff2');font-weight:900;font-style:normal;font-display:swap}
   :root{
     --ivory:#F4F8FB;
     --paper:#FFFFFF;
