@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
 <title>우리집 주간보호센터 | 인천 남동구 구월동 노인주간보호센터</title>
 <meta name="description" content="인천 남동구 구월동 우리집 주간보호센터. 넓고 환한 센터 내부 사진과 이용 비용, 오시는 길 안내. 하루 무료 체험. 상담문의 010-4912-1562.">
 <meta name="theme-color" content="#1D4B6B">
@@ -166,7 +167,17 @@
   .cb-num{
     margin:0;font-size:clamp(2.15rem,5.6vw,3.5rem);font-weight:900;
     letter-spacing:-.015em;line-height:1.1;color:#fff;font-variant-numeric:tabular-nums;
+    display:flex;align-items:center;gap:.26em;
   }
+  /* 전화기 아이콘 — 번호 크기에 맞춰 함께 커지고 작아진다. */
+  .ic-phone{width:.68em;height:.68em;flex:none;display:block;color:#fff;fill:none;
+    stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  /* iOS Safari가 전화번호를 파란 자동 링크로 바꿔도 색이 바뀌지 않게 고정한다. */
+  a[x-apple-data-detectors],a[href^="tel"],a[href^="tel"]:visited{
+    color:inherit !important;text-decoration:none !important;
+    font:inherit !important;-webkit-text-fill-color:currentColor !important;
+  }
+  .cb-num .tel{color:#fff;-webkit-text-fill-color:#fff}
   .cb-side{margin:0;padding:0;list-style:none;font-size:.93rem;font-weight:500;line-height:1.8;color:#D3E3EE}
   .cb-side li{position:relative;padding-left:15px}
   .cb-side li::before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:#9FC98A}
@@ -284,7 +295,9 @@
     font-size:clamp(1.9rem,4.4vw,2.8rem);font-weight:900;color:#fff;
     letter-spacing:-.01em;line-height:1.2;margin:0;font-variant-numeric:tabular-nums;
   }
-  .contact .big span{display:block;font-size:clamp(1rem,1.8vw,1.2rem);color:#CFE0EC;font-weight:800;margin-top:10px;letter-spacing:0}
+  .contact .big .telrow{display:flex;align-items:center;gap:.26em}
+  .contact .big .tel{color:#fff;-webkit-text-fill-color:#fff}
+  .contact .big .sub{display:block;font-size:clamp(1rem,1.8vw,1.2rem);color:#CFE0EC;font-weight:800;margin-top:10px;letter-spacing:0}
   .contact .hours{font-size:.94rem;font-weight:500;color:#C2D6E4;margin-top:12px}
   .addr-box{border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:24px 26px;background:rgba(255,255,255,.04)}
   .addr-box .k{font-size:.76rem;letter-spacing:.16em;font-weight:800;color:#A8CBE0;margin:0 0 6px}
@@ -342,6 +355,11 @@
     .hero-logo{width:min(56%,202px);right:0}
     .hero h1{font-size:clamp(2.25rem,10.2vw,3rem)}
   }
+  /* 좁은 폰에서도 전화기 아이콘과 번호가 한 줄에 들어가도록 번호 크기를 살짝 풀어 준다. */
+  @media (max-width:400px){
+    .cb-num{font-size:clamp(1.85rem,9.9vw,2.4rem);gap:.2em}
+    .cb-num .ic-phone{width:.64em;height:.64em}
+  }
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} .blog-cta{transition:none}}
 </style>
 </head>
@@ -389,7 +407,9 @@
     <div class="callband-in">
       <div>
         <span class="cb-label">상담문의</span>
-        <p class="cb-num">010-4912-1562</p>
+        <p class="cb-num">
+          <svg class="ic-phone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="tel">010-4912-1562</span>
+        </p>
       </div>
       <ul class="cb-side">
         <li><strong>24시간</strong> 상담 가능 · 점심시간에도 상담합니다</li>
@@ -584,8 +604,9 @@
     <div class="contact">
       <div>
         <p class="label">상담문의</p>
-        <p class="big">010-4912-1562
-          <span>센터 대표전화 032-462-7877</span>
+        <p class="big">
+          <span class="telrow"><svg class="ic-phone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="tel">010-4912-1562</span></span>
+          <span class="sub">센터 대표전화 032-462-7877</span>
         </p>
         <p class="hours">24시간 상담 가능 · 평일 상담 오전 8시 ~ 오후 6시</p>
         <a class="blog-link--dark" href="https://m.blog.naver.com/icn_ourhouse" target="_blank" rel="noopener noreferrer">
