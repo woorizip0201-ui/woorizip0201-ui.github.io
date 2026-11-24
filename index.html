@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 <title>우리집 주간보호센터 | 인천 남동구 구월동 노인주간보호센터</title>
-<meta name="description" content="인천 남동구 구월동 우리집 주간보호센터. 넓고 환한 센터 내부 사진과 이용 비용, 오시는 길 안내. 하루 무료 체험. 상담문의 010-4912-1562.">
+<meta name="description" content="인천 남동구 구월동 우리집 주간보호센터. 하루 일정표와 9가지 프로그램, 센터 사진 60장, 2026년 이용료와 5등급 계산 예시, 오시는 길. 하루 무료 체험. 상담 010-4912-1562.">
 <meta name="theme-color" content="#1D4B6B">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
@@ -316,6 +316,82 @@
     padding:10px 14px;box-shadow:0 10px 24px -18px rgba(0,0,0,.9);
   }
 
+
+  /* ---------- 하루 일정표 ---------- */
+  .flow{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:6px clamp(14px,2vw,26px);margin:0 0 clamp(26px,3.2vw,38px);box-shadow:0 20px 44px -40px rgba(21,60,83,.5)}
+  .flow-row{display:grid;grid-template-columns:78px 228px 1fr;align-items:baseline;gap:6px clamp(14px,2vw,26px);padding:clamp(16px,2vw,22px) 4px;border-top:1px solid #E4EDF4}
+  .flow-row:first-child{border-top:0}
+  .flow-k{display:inline-block;justify-self:start;font-size:.75rem;font-weight:900;letter-spacing:.1em;color:var(--blue);background:var(--sky);border-radius:999px;padding:4px 12px;line-height:1.4}
+  .flow-row h3{margin:0;font-size:1rem;font-weight:800;color:var(--deep);line-height:1.5;letter-spacing:-.01em}
+  .flow-row p{margin:0;font-size:.9rem;color:#54636E;line-height:1.7}
+  .flow-row p span{color:#9FB0BC;padding:0 .35em}
+  .flow-note{margin:14px 0 0;font-size:.83rem;color:var(--muted);line-height:1.7}
+
+  /* ---------- 프로그램 카드 ---------- */
+  .prog{display:grid;gap:clamp(12px,1.5vw,20px);grid-template-columns:repeat(3,1fr)}
+  .progcard{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 22px 46px -40px rgba(21,60,83,.6);display:flex;flex-direction:column}
+  .progcard img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--sand)}
+  .progcard .body{padding:16px 18px 18px}
+  .progcard .no{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;border-radius:8px;background:var(--sage-soft);color:var(--forest);font-size:.72rem;font-weight:900;padding:0 6px;margin-bottom:9px;font-variant-numeric:tabular-nums}
+  .progcard h3{font-size:1rem;color:var(--deep);font-weight:800;line-height:1.42;margin:0 0 6px;letter-spacing:-.01em}
+  .progcard p{font-size:.89rem;color:var(--muted);line-height:1.68;margin:0}
+
+  /* ---------- 사진 트랙 ---------- */
+  .tracks{margin-top:clamp(10px,1.4vw,18px)}
+  .track+.track{margin-top:clamp(26px,3.2vw,40px)}
+  .track-head{display:flex;align-items:baseline;gap:10px;margin:0 0 12px}
+  .track-num{font-size:.72rem;font-weight:900;letter-spacing:.1em;color:var(--sage);font-variant-numeric:tabular-nums}
+  .track-head h3{font-size:1.1rem;color:var(--deep);font-weight:800;margin:0;letter-spacing:-.01em}
+  .track-count{margin-left:auto;font-size:.78rem;color:var(--muted);white-space:nowrap}
+  .rail--42 .daycard img{aspect-ratio:4/3}
+
+  /* ---------- 이용료 계산 예시 ---------- */
+  .calc{margin-top:clamp(28px,3.6vw,44px);background:linear-gradient(160deg,#F1F8FE 0%,#EBF4EF 100%);border:1px solid #D6E6F1;border-radius:22px;padding:clamp(20px,2.6vw,34px)}
+  .calc-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;margin:0 0 4px}
+  .calc-head h3{font-size:clamp(1.1rem,2vw,1.3rem);color:var(--deep);font-weight:800;margin:0;letter-spacing:-.015em}
+  .calc-badge{font-size:.72rem;font-weight:900;letter-spacing:.08em;color:#fff;background:var(--green);border-radius:999px;padding:4px 10px}
+  .calc-sub{font-size:.9rem;color:var(--muted);margin:0 0 18px;line-height:1.7}
+  .calc-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(18px,3vw,38px);align-items:start}
+  .calc table{width:100%;border-collapse:collapse;background:rgba(255,255,255,.78);border-radius:14px;overflow:hidden;font-variant-numeric:tabular-nums}
+  .calc th,.calc td{padding:12px 14px;font-size:.9rem;border-bottom:1px solid #DBE8F2;text-align:left;vertical-align:top}
+  .calc tbody tr:last-child th,.calc tbody tr:last-child td{border-bottom:0}
+  .calc tbody th{font-weight:700;color:#39505F}
+  .calc td.num{text-align:right;font-weight:800;color:var(--deep);white-space:nowrap}
+  .calc tr.total th,.calc tr.total td{background:rgba(78,138,49,.10);font-weight:900;color:var(--forest)}
+  .calc tr.total td.num{color:var(--forest)}
+  .calc-formula{margin:14px 0 0;font-size:.86rem;color:#39505F;background:rgba(255,255,255,.7);border:1px dashed #C9DCEC;border-radius:12px;padding:10px 14px;font-weight:700;line-height:1.7}
+  .calc-notes{margin:0;padding:0;list-style:none;font-size:.86rem;color:#46545F;line-height:1.75}
+  .calc-notes li{position:relative;padding-left:14px;margin-bottom:9px}
+  .calc-notes li:last-child{margin-bottom:0}
+  .calc-notes li::before{content:"";position:absolute;left:0;top:10px;width:5px;height:5px;border-radius:50%;background:var(--sage)}
+  .calc-src{margin:16px 0 0;font-size:.78rem;color:var(--muted)}
+
+  /* ---------- 복사·저장 방지 ---------- */
+  html,body{
+    -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+    -webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;
+  }
+  img{-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none}
+  .rail{touch-action:pan-x pan-y}
+
+  /* ---------- 반응형(추가) ---------- */
+  @media (max-width:1000px){
+    .flow-row{grid-template-columns:78px 1fr}
+    .flow-row p{grid-column:2;margin-top:2px}
+    .prog{grid-template-columns:repeat(2,1fr)}
+    .calc-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:640px){
+    .flow{padding:4px 14px}
+    .flow-row{grid-template-columns:1fr;gap:4px;padding:16px 2px}
+    .flow-row h3{font-size:.97rem}
+    .flow-row p{font-size:.87rem}
+    .prog{grid-template-columns:1fr}
+    .flow-step{padding:18px 16px 16px}
+    .track-head h3{font-size:1rem}
+    .track-count{font-size:.74rem}
+  }
+
   /* ---------- 반응형 ---------- */
   @media (max-width:1000px){
     .mrow--d{grid-template-columns:1fr 1fr}
@@ -369,7 +445,7 @@
 <header class="hero">
   <div class="wrap hero-inner">
 
-    <span class="hero-logo" aria-hidden="true"><img src="images/logo-bg.png" alt="" width="1370" height="817"></span>
+    <span class="hero-logo" aria-hidden="true"><img draggable="false" src="images/logo-bg.png" alt="" width="1370" height="817"></span>
 
     <div class="hero-copy">
       <div class="brandline">
@@ -389,7 +465,7 @@
     </div>
 
     <figure class="hero-media">
-      <img src="images/hero-scene.jpg"
+      <img draggable="false" src="images/hero-scene.jpg"
            alt="아치 입구에서 창가까지, 긴 식탁과 라운지 소파가 한눈에 들어오는 센터 홀 전체 풍경"
            width="1600" height="1200" fetchpriority="high">
       <figcaption class="hero-badge">
@@ -430,60 +506,60 @@
     <div class="mosaic">
       <div class="mrow mrow--a">
         <figure class="shot">
-          <img loading="lazy" src="images/sp-lounge-wide.jpg" alt="소파와 긴 테이블, 대형 TV가 놓인 넓은 라운지 전경" width="1600" height="1200">
+          <img draggable="false" loading="lazy" src="images/sp-lounge-wide.jpg" alt="소파와 긴 테이블, 대형 TV가 놓인 넓은 라운지 전경" width="1600" height="1200">
           <figcaption>카페처럼 넓은 라운지</figcaption>
         </figure>
         <figure class="shot">
-          <img loading="lazy" src="images/sp-massage.jpg" alt="큰 창을 등지고 놓인 안마의자 세 대와 화분" width="1100" height="1467">
+          <img draggable="false" loading="lazy" src="images/sp-massage.jpg" alt="큰 창을 등지고 놓인 안마의자 세 대와 화분" width="1100" height="1467">
           <figcaption>창가 안마의자</figcaption>
         </figure>
       </div>
 
       <div class="mrow mrow--b">
         <figure class="shot">
-          <img loading="lazy" src="images/sp-arch.jpg" alt="둥근 아치 입구와 화분 너머로 보이는 홀" width="1400" height="1050">
+          <img draggable="false" loading="lazy" src="images/sp-arch.jpg" alt="둥근 아치 입구와 화분 너머로 보이는 홀" width="1400" height="1050">
           <figcaption>아치 입구와 플랜테리어</figcaption>
         </figure>
         <figure class="shot">
-          <img loading="lazy" src="images/sp-sling.jpg" alt="천장 레일에서 내려온 워킹 슬링과 아치 거울, 소파" width="1400" height="1050">
+          <img draggable="false" loading="lazy" src="images/sp-sling.jpg" alt="천장 레일에서 내려온 워킹 슬링과 아치 거울, 소파" width="1400" height="1050">
           <figcaption>워킹 슬링 보행 재활 레일</figcaption>
         </figure>
         <figure class="shot">
-          <img loading="lazy" src="images/sp-glass.jpg" alt="유리 파티션과 화분, 그 너머로 보이는 라운지와 데스크" width="1100" height="1467">
+          <img draggable="false" loading="lazy" src="images/sp-glass.jpg" alt="유리 파티션과 화분, 그 너머로 보이는 라운지와 데스크" width="1100" height="1467">
           <figcaption>유리 파티션 너머 라운지</figcaption>
         </figure>
       </div>
 
       <div class="mrow mrow--c">
         <figure class="shot">
-          <img loading="lazy" src="images/sp-lounge-window.jpg" alt="소파와 테이블, 대형 화면과 창가 자리가 이어지는 라운지 전경" width="1500" height="1125">
+          <img draggable="false" loading="lazy" src="images/sp-lounge-window.jpg" alt="소파와 테이블, 대형 화면과 창가 자리가 이어지는 라운지 전경" width="1500" height="1125">
           <figcaption>소파와 창가 자리</figcaption>
         </figure>
         <figure class="shot">
-          <img loading="lazy" src="images/sp-handrail.jpg" alt="초록 루버 벽면을 따라 설치된 흰색 안전 손잡이와 복도" width="1200" height="900">
+          <img draggable="false" loading="lazy" src="images/sp-handrail.jpg" alt="초록 루버 벽면을 따라 설치된 흰색 안전 손잡이와 복도" width="1200" height="900">
           <figcaption>복도 안전 손잡이</figcaption>
         </figure>
         <figure class="shot">
-          <img loading="lazy" src="images/sp-sling-marble.jpg" alt="천장 보행 재활 레일과 대리석 세면대, 아치 거울" width="1200" height="900">
+          <img draggable="false" loading="lazy" src="images/sp-sling-marble.jpg" alt="천장 보행 재활 레일과 대리석 세면대, 아치 거울" width="1200" height="900">
           <figcaption>보행 재활 레일과 세면대</figcaption>
         </figure>
       </div>
 
       <div class="mrow mrow--d">
         <figure class="shot">
-          <img loading="lazy" src="images/sp-tables.jpg" alt="긴 테이블과 의자가 나란히 놓인 프로그램·식사 공간" width="1200" height="900">
+          <img draggable="false" loading="lazy" src="images/sp-tables.jpg" alt="긴 테이블과 의자가 나란히 놓인 프로그램·식사 공간" width="1200" height="900">
           <figcaption>긴 식탁과 프로그램 자리</figcaption>
         </figure>
         <figure class="shot">
-          <img loading="lazy" src="images/sp-ring.jpg" alt="천장의 링 조명 아래 소파와 테이블이 놓인 라운지" width="1200" height="900">
+          <img draggable="false" loading="lazy" src="images/sp-ring.jpg" alt="천장의 링 조명 아래 소파와 테이블이 놓인 라운지" width="1200" height="900">
           <figcaption>링 조명 아래 라운지</figcaption>
         </figure>
         <figure class="shot">
-          <img loading="lazy" src="images/sp-glass-garden.jpg" alt="아치 모양 유리 파티션 안쪽에 자란 실내 화단" width="1100" height="1467">
+          <img draggable="false" loading="lazy" src="images/sp-glass-garden.jpg" alt="아치 모양 유리 파티션 안쪽에 자란 실내 화단" width="1100" height="1467">
           <figcaption>아치 유리와 실내 화단</figcaption>
         </figure>
         <figure class="shot">
-          <img loading="lazy" src="images/sp-plants.jpg" alt="잎이 큰 화분 옆 창가에 놓인 안마의자" width="1100" height="825">
+          <img draggable="false" loading="lazy" src="images/sp-plants.jpg" alt="잎이 큰 화분 옆 창가에 놓인 안마의자" width="1100" height="825">
           <figcaption>화분 옆 안마의자</figcaption>
         </figure>
       </div>
@@ -492,61 +568,414 @@
   </div>
 </section>
 
-<!-- ================= 하루의 사진 (가로 드래그) ================= -->
+<!-- ================= 하루 ================= -->
 <section class="section section--sky" aria-labelledby="day">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">프로그램 · 식사 · 행사</p>
+      <p class="eyebrow">하루의 흐름 · 프로그램</p>
       <h2 id="day">하루가 이렇게 흘러갑니다</h2>
-      <p class="rail-hint"><span class="arw">←</span> 사진을 옆으로 밀어 10장 모두 보기 <span class="arw">→</span></p>
+      <p class="lead">아침에 모시고 와서 저녁에 집 앞까지. 하루의 큰 흐름과 아홉 가지 프로그램을 사진으로 먼저 보세요.</p>
+    </div>
+
+    <div class="flow">
+      <div class="flow-row">
+        <span class="flow-k">아침</span>
+        <h3>모시고 와서 하루를 엽니다</h3>
+        <p>송영 등원 · 인사 나누기<span>·</span>기초건강체크(혈압·혈당·체온)<span>·</span>수제죽 아침 식사<span>·</span>투약관리</p>
+      </div>
+      <div class="flow-row">
+        <span class="flow-k">오전</span>
+        <h3>몸과 머리를 깨웁니다</h3>
+        <p>음악체조 · 인지체조<span>·</span>오전 인지 프로그램<span>·</span>학습지 · 만다라 · 퍼즐</p>
+      </div>
+      <div class="flow-row">
+        <span class="flow-k">점심</span>
+        <h3>직접 조리한 한 끼</h3>
+        <p>점심 식사<span>·</span>식후 가벼운 건강 체조<span>·</span>낮잠 · 물리치료</p>
+      </div>
+      <div class="flow-row">
+        <span class="flow-k">오후</span>
+        <h3>재활과 여가의 시간</h3>
+        <p>슬링 · 재활 기구 운동<span>·</span>오후 인지 · 노래방<span>·</span>수제 간식과 차</p>
+      </div>
+      <div class="flow-row">
+        <span class="flow-k">귀가</span>
+        <h3>집 앞까지 모셔다 드립니다</h3>
+        <p>하루 돌봄 기록 정리<span>·</span>보호자께 인계<span>·</span>송영으로 귀가</p>
+      </div>
+    </div>
+    <p class="flow-note">상담 08:00 ~ 18:00(점심시간 포함) · 토요일·법정공휴일 정상 운영. 어르신의 이용시간(8~10시간)과 상태에 맞춰 세부 시간은 조정되며, 정확한 일과 시각은 상담으로 안내해 드립니다.</p>
+  </div>
+
+  <div class="wrap" style="margin-top:clamp(34px,4.4vw,56px)">
+    <div class="section-head" style="margin-bottom:clamp(16px,2vw,22px)">
+      <p class="eyebrow">프로그램 · 케어</p>
+      <h3 style="font-size:clamp(1.35rem,2.4vw,1.7rem);color:var(--deep);font-weight:800;letter-spacing:-.015em;margin:0">아홉 가지 프로그램</h3>
+    </div>
+    <div class="prog">
+      <article class="progcard">
+        <img loading="lazy" decoding="async" draggable="false" src="images/prog-01.jpg" alt="아침에 어르신과 마주 앉아 이야기를 나누는 모습" width="800" height="600">
+        <div class="body">
+          <span class="no">01</span>
+          <h3>아침 기초건강체크</h3>
+          <p>등원하면 혈압·혈당·체온을 확인하고 그날의 컨디션을 살핍니다.</p>
+        </div>
+      </article>
+      <article class="progcard">
+        <img loading="lazy" decoding="async" draggable="false" src="images/prog-02.jpg" alt="식사 자리에서 어르신과 마주 앉은 직원" width="800" height="600">
+        <div class="body">
+          <span class="no">02</span>
+          <h3>하루 세 번 투약관리</h3>
+          <p>아침·점심·저녁 복용약을 시간에 맞춰 챙겨드립니다.</p>
+        </div>
+      </article>
+      <article class="progcard">
+        <img loading="lazy" decoding="async" draggable="false" src="images/prog-03.jpg" alt="검은깨를 올린 수제죽 한 그릇" width="800" height="600">
+        <div class="body">
+          <span class="no">03</span>
+          <h3>아침 수제죽</h3>
+          <p>속을 편하게 여는 수제죽 한 그릇으로 하루를 엽니다.</p>
+        </div>
+      </article>
+      <article class="progcard">
+        <img loading="lazy" decoding="async" draggable="false" src="images/prog-04.jpg" alt="두 팔을 들어 올리며 하는 아침 체조" width="800" height="600">
+        <div class="body">
+          <span class="no">04</span>
+          <h3>아침 체조 (음악체조·인지체조)</h3>
+          <p>음악에 맞춰 몸을 풀고, 손과 머리를 함께 쓰며 아침을 깨웁니다.</p>
+        </div>
+      </article>
+      <article class="progcard">
+        <img loading="lazy" decoding="async" draggable="false" src="images/prog-05.jpg" alt="도안에 색을 채우는 인지 활동" width="800" height="600">
+        <div class="body">
+          <span class="no">05</span>
+          <h3>오전 인지 · 오후 인지 프로그램</h3>
+          <p>오전과 오후 두 번, 학습지·만다라·퍼즐로 머리를 씁니다.</p>
+        </div>
+      </article>
+      <article class="progcard">
+        <img loading="lazy" decoding="async" draggable="false" src="images/prog-06.jpg" alt="노래에 맞춰 함께 손뼉 치는 시간" width="800" height="600">
+        <div class="body">
+          <span class="no">06</span>
+          <h3>노래방 프로그램</h3>
+          <p>노래와 박수로 스트레스를 풀고 기분을 올립니다.</p>
+        </div>
+      </article>
+      <article class="progcard">
+        <img loading="lazy" decoding="async" draggable="false" src="images/prog-07.jpg" alt="슬링 레일에 기대 다리를 뻗는 재활" width="800" height="600">
+        <div class="body">
+          <span class="no">07</span>
+          <h3>신체 슬링 프로그램</h3>
+          <p>천장 레일 슬링에 기대어 관절과 근력을 부드럽게 자극합니다.</p>
+        </div>
+      </article>
+      <article class="progcard">
+        <img loading="lazy" decoding="async" draggable="false" src="images/prog-08.jpg" alt="재활 기구가 늘어선 운동 공간" width="800" height="600">
+        <div class="body">
+          <span class="no">08</span>
+          <h3>신체 다양한 기구 프로그램</h3>
+          <p>재활 자전거·링·안마의자 등 기구로 하체와 균형을 기릅니다.</p>
+        </div>
+      </article>
+      <article class="progcard">
+        <img loading="lazy" decoding="async" draggable="false" src="images/prog-09.jpg" alt="작은 구슬을 하나씩 집어 붙이는 손끝 활동" width="800" height="600">
+        <div class="body">
+          <span class="no">09</span>
+          <h3>인지 발달 프로그램</h3>
+          <p>개인 교구로 손끝을 쓰며 집중력과 기억력을 함께 기릅니다.</p>
+        </div>
+      </article>
     </div>
   </div>
 
-  <div class="rail" id="dayRail" role="region" aria-label="하루 활동 사진 10장, 옆으로 밀어 보기" tabindex="0">
+  <div class="wrap" style="margin-top:clamp(38px,5vw,64px)">
+    <div class="section-head" style="margin-bottom:clamp(14px,1.8vw,20px)">
+      <p class="eyebrow">사진으로 보는 하루</p>
+      <h3 style="font-size:clamp(1.35rem,2.4vw,1.7rem);color:var(--deep);font-weight:800;letter-spacing:-.015em;margin:0">주제별로 10장씩, 여섯 줄</h3>
+      <p class="lead">모두 60장입니다. 줄마다 옆으로 밀거나 끌어서 10장을 넘겨 보세요.</p>
+    </div>
+  </div>
+
+  <div class="tracks">
+  <div class="wrap">
+    <div class="track-head"><span class="track-num">01</span><h3>하루의 사진</h3><span class="track-count">사진 10장 · 옆으로 밀어 보기</span></div>
+  </div>
+  <div class="rail" id="railDay" role="region" aria-label="railDay 사진 10장, 옆으로 밀어 보기" tabindex="0">
     <figure class="daycard">
-      <img loading="eager" draggable="false" src="images/day-01-body.jpg" alt="어르신들이 둥글게 둘러앉아 재활 링을 들고 어깨 운동을 하고 계신 모습" width="1000" height="667">
-      <figcaption><span class="num">01</span>신체 재활</figcaption>
+      <img loading="eager" decoding="async" draggable="false" src="images/day-01-body.jpg" alt="어르신들이 둥글게 둘러앉아 재활 링을 들고 어깨 운동을 하고 계신 모습" width="1000" height="667">
+            <figcaption><span class="num">01</span>신체 재활</figcaption>
     </figure>
     <figure class="daycard">
-      <img loading="eager" draggable="false" src="images/day-02-equip.jpg" alt="창가를 따라 놓인 재활 자전거에서 운동하고 계신 어르신들" width="1000" height="667">
-      <figcaption><span class="num">02</span>재활 기구 운동</figcaption>
+      <img loading="eager" decoding="async" draggable="false" src="images/day-02-equip.jpg" alt="창가를 따라 놓인 재활 자전거에서 운동하고 계신 어르신들" width="1000" height="667">
+            <figcaption><span class="num">02</span>재활 기구 운동</figcaption>
     </figure>
     <figure class="daycard">
-      <img loading="eager" draggable="false" src="images/day-03-mind.jpg" alt="테이블에 둘러앉아 만다라 학습지를 색칠하며 인지 활동을 하고 계신 어르신들" width="1000" height="667">
-      <figcaption><span class="num">03</span>인지 재활</figcaption>
+      <img loading="eager" decoding="async" draggable="false" src="images/day-03-mind.jpg" alt="테이블에 둘러앉아 만다라 학습지를 색칠하며 인지 활동을 하고 계신 어르신들" width="1000" height="667">
+            <figcaption><span class="num">03</span>인지 재활</figcaption>
     </figure>
     <figure class="daycard">
-      <img loading="eager" draggable="false" src="images/day-04-fun.jpg" alt="긴 테이블에 둘러앉아 보드게임을 함께 즐기고 계신 어르신들" width="1000" height="666">
-      <figcaption><span class="num">04</span>여가 프로그램</figcaption>
+      <img loading="eager" decoding="async" draggable="false" src="images/day-04-fun.jpg" alt="긴 테이블에 둘러앉아 보드게임을 함께 즐기고 계신 어르신들" width="1000" height="666">
+            <figcaption><span class="num">04</span>여가 프로그램</figcaption>
     </figure>
     <figure class="daycard">
-      <img loading="eager" draggable="false" src="images/day-05-out.jpg" alt="카페 테이블에 둘러앉아 음료를 나누며 사회적응 훈련을 하고 있는 모습" width="1000" height="667">
-      <figcaption><span class="num">05</span>사회적응 · 카페 나들이</figcaption>
+      <img loading="eager" decoding="async" draggable="false" src="images/day-05-out.jpg" alt="카페 테이블에 둘러앉아 음료를 나누며 사회적응 훈련을 하고 있는 모습" width="1000" height="667">
+            <figcaption><span class="num">05</span>사회적응 · 카페 나들이</figcaption>
     </figure>
     <figure class="daycard">
-      <img loading="eager" draggable="false" src="images/day-06-meal.jpg" alt="점심 시간, 긴 테이블에서 직접 조리한 식사를 하고 계신 어르신들" width="1000" height="667">
-      <figcaption><span class="num">06</span>직접 조리한 한 끼</figcaption>
+      <img loading="eager" decoding="async" draggable="false" src="images/day-06-meal.jpg" alt="점심 시간, 긴 테이블에서 직접 조리한 식사를 하고 계신 어르신들" width="1000" height="667">
+            <figcaption><span class="num">06</span>직접 조리한 한 끼</figcaption>
     </figure>
     <figure class="daycard">
-      <img loading="eager" draggable="false" src="images/day-07-snack.jpg" alt="접시마다 담아낸 수제 간식과 과일, 디저트가 차려진 모습" width="1000" height="666">
-      <figcaption><span class="num">07</span>수제 간식과 차</figcaption>
+      <img loading="eager" decoding="async" draggable="false" src="images/day-07-snack.jpg" alt="접시마다 담아낸 수제 간식과 과일, 디저트가 차려진 모습" width="1000" height="666">
+            <figcaption><span class="num">07</span>수제 간식과 차</figcaption>
     </figure>
     <figure class="daycard">
-      <img loading="eager" draggable="false" src="images/day-08-party.jpg" alt="생신잔치 케이크 상 앞에서 꽃목걸이와 왕관을 하고 앉아 계신 어르신들" width="966" height="644">
-      <figcaption><span class="num">08</span>생신잔치</figcaption>
+      <img loading="eager" decoding="async" draggable="false" src="images/day-08-party.jpg" alt="생신잔치 케이크 상 앞에서 꽃목걸이와 왕관을 하고 앉아 계신 어르신들" width="966" height="644">
+            <figcaption><span class="num">08</span>생신잔치</figcaption>
     </figure>
     <figure class="daycard">
-      <img loading="eager" draggable="false" src="images/day-09-table.jpg" alt="생신을 맞은 어르신 네 분이 왕관과 꽃목걸이를 하고 앉아 있는 모습" width="1000" height="667">
-      <figcaption><span class="num">09</span>생신 주인공들</figcaption>
+      <img loading="eager" decoding="async" draggable="false" src="images/day-09-table.jpg" alt="생신을 맞은 어르신 네 분이 왕관과 꽃목걸이를 하고 앉아 있는 모습" width="1000" height="667">
+            <figcaption><span class="num">09</span>생신 주인공들</figcaption>
     </figure>
     <figure class="daycard">
-      <img loading="eager" draggable="false" src="images/day-10-together.jpg" alt="직원과 어르신이 함께 노래를 부르며 즐거운 시간을 보내는 모습" width="1000" height="666">
-      <figcaption><span class="num">10</span>노래하고 함께하는 하루</figcaption>
+      <img loading="eager" decoding="async" draggable="false" src="images/day-10-together.jpg" alt="직원과 어르신이 함께 노래를 부르며 즐거운 시간을 보내는 모습" width="1000" height="666">
+            <figcaption><span class="num">10</span>노래하고 함께하는 하루</figcaption>
     </figure>
   </div>
 
-  <div class="wrap rail-foot">
-    <p class="count">사진 10장 · 마우스로 끌거나 옆으로 밀어서 보세요</p>
+  <div class="wrap">
+    <div class="track-head"><span class="track-num">02</span><h3>아침을 여는 시간</h3><span class="track-count">사진 10장 · 옆으로 밀어 보기</span></div>
+  </div>
+  <div class="rail rail--42" id="railMorning" role="region" aria-label="railMorning 사진 10장, 옆으로 밀어 보기" tabindex="0">
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-a01.jpg" alt="아침에 한 그릇씩 담아 두는 수제죽" width="800" height="600">
+      <figcaption><span class="num">01</span>아침 수제죽</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-a02.jpg" alt="따뜻한 국과 반찬을 곁들인 점심 식사" width="800" height="600">
+      <figcaption><span class="num">02</span>점심 식사</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-a03.jpg" alt="접시마다 담아 내는 과일 간식" width="800" height="600">
+      <figcaption><span class="num">03</span>오후 간식</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-a04.jpg" alt="아침에 한 그릇씩 담아 두는 수제죽" width="800" height="600">
+      <figcaption><span class="num">04</span>한 그릇씩 담는 아침죽</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-a05.jpg" alt="한 끼 식사와 간식을 함께 차린 상" width="800" height="600">
+      <figcaption><span class="num">05</span>식사와 간식</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-a06.jpg" alt="아침에 다 같이 팔을 들어 올리는 체조" width="800" height="600">
+      <figcaption><span class="num">06</span>아침 체조</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-a07.jpg" alt="음악에 맞춰 손뼉 치며 하는 아침 체조" width="800" height="600">
+      <figcaption><span class="num">07</span>음악에 맞춰 손뼉</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-a08.jpg" alt="자리에서 일어나 함께하는 아침 건강 체조" width="800" height="600">
+      <figcaption><span class="num">08</span>아침 건강 체조</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-a09.jpg" alt="테이블 사이에서 함께 몸을 푸는 아침" width="800" height="600">
+      <figcaption><span class="num">09</span>함께하는 아침</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-a10.jpg" alt="앉은 자리에서 두 팔을 뻗어 하는 체조" width="800" height="600">
+      <figcaption><span class="num">10</span>자리에서 하는 체조</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="track-head"><span class="track-num">03</span><h3>몸을 깨우는 재활</h3><span class="track-count">사진 10장 · 옆으로 밀어 보기</span></div>
+  </div>
+  <div class="rail rail--42" id="railMove" role="region" aria-label="railMove 사진 10장, 옆으로 밀어 보기" tabindex="0">
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-b01.jpg" alt="재활 링을 들고 앉아서 하는 운동" width="800" height="600">
+      <figcaption><span class="num">01</span>재활 링 운동</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-b02.jpg" alt="나란히 앉아 링을 주고받는 재활 운동" width="800" height="600">
+      <figcaption><span class="num">02</span>짝과 함께하는 링 운동</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-b03.jpg" alt="의자에 앉아 링을 돌리는 상체 운동" width="800" height="600">
+      <figcaption><span class="num">03</span>앉아서 하는 링 운동</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-b04.jpg" alt="창가 재활 자전거로 페달을 밟는 모습" width="800" height="600">
+      <figcaption><span class="num">04</span>재활 자전거</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-b05.jpg" alt="매트에 앉아 진행하는 바닥 재활 운동" width="800" height="600">
+      <figcaption><span class="num">05</span>바닥 재활 운동</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-b06.jpg" alt="직원이 옆에서 자세를 잡아 주는 재활 시간" width="800" height="600">
+      <figcaption><span class="num">06</span>옆에서 돕는 재활</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-b07.jpg" alt="천장 레일 슬링에 기대 앉아 하는 재활" width="800" height="600">
+      <figcaption><span class="num">07</span>슬링 재활</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-b08.jpg" alt="슬링 줄을 잡고 다리를 뻗는 스트레칭" width="800" height="600">
+      <figcaption><span class="num">08</span>슬링 스트레칭</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-b09.jpg" alt="직원이 곁에서 자세를 잡아 주는 슬링 운동" width="800" height="600">
+      <figcaption><span class="num">09</span>슬링 개별 재활</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-b10.jpg" alt="안마의자와 재활 기구가 놓인 공간" width="800" height="600">
+      <figcaption><span class="num">10</span>재활 기구</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="track-head"><span class="track-num">04</span><h3>머리를 쓰는 시간</h3><span class="track-count">사진 10장 · 옆으로 밀어 보기</span></div>
+  </div>
+  <div class="rail rail--42" id="railMind" role="region" aria-label="railMind 사진 10장, 옆으로 밀어 보기" tabindex="0">
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-c01.jpg" alt="만다라 도안에 색을 채우는 인지 활동" width="800" height="600">
+      <figcaption><span class="num">01</span>만다라 색칠</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-c02.jpg" alt="테이블에 앉아 도안을 색칠하는 시간" width="800" height="600">
+      <figcaption><span class="num">02</span>색칠하며 집중</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-c03.jpg" alt="학습지에 그림을 그려 넣는 인지 수업" width="800" height="600">
+      <figcaption><span class="num">03</span>인지 학습지</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-c04.jpg" alt="창가 자리에서 도안을 색칠하는 어르신" width="800" height="600">
+      <figcaption><span class="num">04</span>오전 인지 활동</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-c05.jpg" alt="접시에 구슬을 옮겨 담는 소근육 활동" width="800" height="600">
+      <figcaption><span class="num">05</span>구슬 공예</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-c06.jpg" alt="비즈를 집어 실에 꿰는 손끝 활동" width="800" height="600">
+      <figcaption><span class="num">06</span>비즈 작업</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-c07.jpg" alt="노란 천 위에 구슬을 붙이며 만드는 작품" width="800" height="600">
+      <figcaption><span class="num">07</span>손끝 공예</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-c08.jpg" alt="테이블에 모여 조각을 맞추는 퍼즐 시간" width="800" height="600">
+      <figcaption><span class="num">08</span>퍼즐 맞추기</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-c09.jpg" alt="도안에 색연필로 색을 입히는 시간" width="800" height="600">
+      <figcaption><span class="num">09</span>색칠 공부</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-c10.jpg" alt="학습지 그림을 따라 그리는 인지 활동" width="800" height="600">
+      <figcaption><span class="num">10</span>그림 작업</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="track-head"><span class="track-num">05</span><h3>노래와 공연, 웃음</h3><span class="track-count">사진 10장 · 옆으로 밀어 보기</span></div>
+  </div>
+  <div class="rail rail--42" id="railSong" role="region" aria-label="railSong 사진 10장, 옆으로 밀어 보기" tabindex="0">
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-d01.jpg" alt="무대를 바라보며 공연을 관람하는 시간" width="800" height="600">
+      <figcaption><span class="num">01</span>공연 관람</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-d02.jpg" alt="공연에 맞춰 박수 치는 어르신들" width="800" height="600">
+      <figcaption><span class="num">02</span>박수</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-d03.jpg" alt="무대 앞자리에서 공연을 즐기는 모습" width="800" height="600">
+      <figcaption><span class="num">03</span>무대 앞에서</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-d04.jpg" alt="풍선 장식 아래 모여 웃는 어르신들" width="800" height="600">
+      <figcaption><span class="num">04</span>잔치 자리의 웃음</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-d05.jpg" alt="노래에 맞춰 손뼉 치며 호응하는 시간" width="800" height="600">
+      <figcaption><span class="num">05</span>노래와 박수</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-d06.jpg" alt="강당에 모여 공연을 보는 날" width="800" height="600">
+      <figcaption><span class="num">06</span>공연 보는 날</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-d07.jpg" alt="다 같이 모여 노래 부르는 시간" width="800" height="600">
+      <figcaption><span class="num">07</span>노래 부르는 시간</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-d08.jpg" alt="풍선으로 꾸민 잔치 자리" width="800" height="600">
+      <figcaption><span class="num">08</span>잔치 분위기</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-d09.jpg" alt="풍선을 주고받으며 웃는 시간" width="800" height="600">
+      <figcaption><span class="num">09</span>풍선 놀이</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-d10.jpg" alt="풍선을 들고 함께 웃는 프로그램" width="800" height="600">
+      <figcaption><span class="num">10</span>풍선으로 웃음</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="track-head"><span class="track-num">06</span><h3>나들이와 잔치</h3><span class="track-count">사진 10장 · 옆으로 밀어 보기</span></div>
+  </div>
+  <div class="rail rail--42" id="railOut" role="region" aria-label="railOut 사진 10장, 옆으로 밀어 보기" tabindex="0">
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-e01.jpg" alt="단풍 든 공원에서 나눈 도시락" width="800" height="600">
+      <figcaption><span class="num">01</span>가을 소풍</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-e02.jpg" alt="왕관과 생신 띠를 두르고 앉은 생신 주인공" width="800" height="600">
+      <figcaption><span class="num">02</span>생신잔치 주인공</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-e03.jpg" alt="생신잔치에 함께한 어르신과 직원" width="800" height="600">
+      <figcaption><span class="num">03</span>생신잔치 단체사진</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-e04.jpg" alt="하트 풍선을 안고 웃는 생신 주인공" width="800" height="600">
+      <figcaption><span class="num">04</span>하트 풍선</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-e05.jpg" alt="꽃목걸이를 두르고 생신 축하를 받는 모습" width="800" height="600">
+      <figcaption><span class="num">05</span>생신 축하</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-e06.jpg" alt="케이크와 음식을 차린 생신잔치 상" width="800" height="600">
+      <figcaption><span class="num">06</span>생신 상</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-e07.jpg" alt="케이크 앞에서 촛불을 끄는 생신잔치" width="800" height="600">
+      <figcaption><span class="num">07</span>케이크 앞에서</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-e08.jpg" alt="직원이 꽃목걸이를 걸어 드리는 모습" width="800" height="600">
+      <figcaption><span class="num">08</span>꽃목걸이</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-e09.jpg" alt="떡과 과일, 케이크를 차린 디저트 상" width="800" height="600">
+      <figcaption><span class="num">09</span>생신 디저트</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="lazy" decoding="async" draggable="false" src="images/blog-e10.jpg" alt="과일과 간식을 가득 담은 간식 상" width="800" height="600">
+      <figcaption><span class="num">10</span>간식 상</figcaption>
+    </figure>
+  </div>
+  </div>
+
+  <div class="wrap" style="margin-top:clamp(20px,2.6vw,30px);display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between">
+    <p style="margin:0;font-size:.84rem;color:var(--muted)">사진 60장 · 마우스로 끌거나 옆으로 밀어서 보세요</p>
     <a class="blog-cta" href="https://m.blog.naver.com/icn_ourhouse" target="_blank" rel="noopener noreferrer">
       <span class="ico" aria-hidden="true">N</span>
       네이버 블로그에서 더 많은 이야기 보기
@@ -560,13 +989,14 @@
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">이용 비용</p>
-      <h2 id="cost">하루 이용료</h2>
+      <h2 id="cost">하루 이용료와 한 달 계산 예시</h2>
+      <p class="lead">2026년 노인장기요양보험 주·야간보호 수가(보건복지부 고시 제2025-247호) 기준입니다.</p>
     </div>
 
     <div class="cost-wrap">
       <div class="cost">
         <table>
-          <caption>2026년 기준 · 하루 8시간 이상 ~ 10시간 미만</caption>
+          <caption>2026년 기준 · 하루 8시간 이상 ~ 10시간 미만 · 일반 본인부담 15%</caption>
           <thead>
             <tr>
               <th scope="col">등급</th>
@@ -585,10 +1015,46 @@
       <div>
         <ul class="cost-notes">
           <li>일반 본인부담률 15% 기준 (감경 9%·6%, 면제 0%)</li>
-          <li>토요일 추가 가산 없음 · 공휴일·저녁 시간은 가산 기준 적용</li>
+          <li><strong>토요일 추가 가산 없음</strong> — 토요일에 이용해도 1일 본인부담금은 평일과 같습니다. 공휴일은 30%, 18시 이후는 20% 가산됩니다.</li>
+          <li>이용 시간은 송영(차량) 시간까지 포함해 계산합니다.</li>
           <li>등급·이용시간·식사재료비에 따라 달라지며, 정확한 금액은 상담으로 안내합니다.</li>
         </ul>
       </div>
+    </div>
+
+    <div class="calc">
+      <div class="calc-head">
+        <h3>5등급 · 하루 8시간 · 월~금 이용 계산 예시</h3>
+        <span class="calc-badge">한 달 20일 기준</span>
+      </div>
+      <p class="calc-sub">5등급 어르신이 하루 8시간씩, 월요일부터 금요일까지(4주 = 20일) 이용하실 때의 계산입니다. 토요일도 정상 운영하므로 토요일 이용 시에는 하루치가 더해집니다.</p>
+
+      <div class="calc-grid">
+        <div>
+          <table>
+            <caption class="sr-only">5등급 하루 8시간 월~금 이용 시 한 달 본인부담금 계산</caption>
+            <tbody>
+              <tr><th scope="row">1일 급여비용 (5등급 · 8~10시간)</th><td class="num">56,360원</td></tr>
+              <tr><th scope="row">1일 본인부담금 (일반 15%)</th><td class="num">8,454원</td></tr>
+              <tr><th scope="row">한 달 이용일수 (월~금 4주)</th><td class="num">20일</td></tr>
+              <tr><th scope="row">한 달 급여비용 (56,360원 × 20일)</th><td class="num">1,127,200원</td></tr>
+              <tr class="total"><th scope="row">한 달 본인부담금 (8,454원 × 20일)</th><td class="num">169,080원</td></tr>
+              <tr><th scope="row">5등급 재가급여 월 한도액</th><td class="num">1,208,900원</td></tr>
+            </tbody>
+          </table>
+          <p class="calc-formula">계산식 &nbsp;·&nbsp; 8,454원 × 20일 = <strong>169,080원</strong><br>한 달 급여비용 1,127,200원은 5등급 월 한도액 1,208,900원 안에 들어옵니다.</p>
+        </div>
+
+        <ul class="calc-notes">
+          <li>위 금액은 <strong>장기요양급여 본인부담금</strong>만 계산한 것입니다. 여기에 <strong>식사·간식 재료비(비급여)</strong>가 따로 더해집니다. 재료비는 급여비용에 포함되지 않으며, 실제 금액은 상담 시 안내해 드립니다.</li>
+          <li>월 한도액은 방문요양 등 다른 재가급여와 함께 쓰는 금액입니다. 한도를 넘긴 금액은 전액 본인부담입니다.</li>
+          <li>하루 8시간 이상을 월 15일 넘게 이용하면 5등급은 월 한도액의 20% 범위에서 추가 산정될 수 있습니다(공단 확인 필요).</li>
+          <li>감경 대상(9%·6%)이나 법정 면제(0%)이면 본인부담금이 줄어듭니다. 감경 여부는 국민건강보험공단에서 확인합니다.</li>
+          <li>센터를 이용하지 못한 날의 미이용일 급여비용은 별도 기준이 적용됩니다.</li>
+        </ul>
+      </div>
+
+      <p class="calc-src">근거 · 장기요양급여 제공기준 및 급여비용 산정방법 등에 관한 고시(보건복지부 고시 제2025-247호, 2026.1.1. 시행) 제13조·제31조·제33조 · 노인장기요양보험법 시행규칙 제14조(식사재료비 비급여)</p>
     </div>
   </div>
 </section>
@@ -629,7 +1095,7 @@
 
 <footer class="footer">
   <div class="wrap">
-    <img class="footer-logo" src="images/logo-bg.png" alt="우리집 주간보호센터 로고" width="1370" height="817">
+    <img draggable="false" class="footer-logo" src="images/logo-bg.png" alt="우리집 주간보호센터 로고" width="1370" height="817">
     <div class="row">
       <strong>구월 우리집 주간보호센터</strong>
       <span>인천광역시 남동구 호구포로 832, 4층</span>
@@ -642,63 +1108,84 @@
 
 <script>
 (function () {
-  var rail = document.getElementById('dayRail');
-  if (!rail) return;
+  /* ---------- 가로 드래그 트랙 (6줄) ---------- */
+  var rails = document.querySelectorAll('.rail');
 
-  function step() {
-    var card = rail.querySelector('.daycard');
-    if (!card) return 0;
-    var gap = parseFloat(getComputedStyle(rail).columnGap || getComputedStyle(rail).gap || 0) || 0;
-    return card.getBoundingClientRect().width + gap;
-  }
-
-  /* PC: 마우스로 끌어서 넘기기 (터치는 브라우저 기본 스크롤) */
-  var dragging = false, startX = 0, startLeft = 0, moved = false;
-
-  rail.addEventListener('pointerdown', function (e) {
-    if (e.pointerType === 'touch') return;
-    if (typeof e.button === 'number' && e.button !== 0) return;
-    dragging = true; moved = false;
-    startX = e.clientX; startLeft = rail.scrollLeft;
-    rail.classList.add('is-dragging');
-    if (rail.setPointerCapture) { try { rail.setPointerCapture(e.pointerId); } catch (err) {} }
-  });
-
-  rail.addEventListener('pointermove', function (e) {
-    if (!dragging) return;
-    var dx = e.clientX - startX;
-    if (Math.abs(dx) > 4) moved = true;
-    rail.scrollLeft = startLeft - dx;
-  });
-
-  function endDrag(e) {
-    if (!dragging) return;
-    dragging = false;
-    rail.classList.remove('is-dragging');
-    if (e && rail.releasePointerCapture) { try { rail.releasePointerCapture(e.pointerId); } catch (err) {} }
-    /* 놓은 자리에서 가장 가까운 사진으로 정리 */
-    var s = step();
-    if (s > 0) {
-      var idx = Math.round(rail.scrollLeft / s);
-      rail.scrollTo({ left: idx * s, behavior: 'smooth' });
+  Array.prototype.forEach.call(rails, function (rail) {
+    function step() {
+      var card = rail.querySelector('.daycard');
+      if (!card) return 0;
+      var gap = parseFloat(getComputedStyle(rail).columnGap || getComputedStyle(rail).gap || 0) || 0;
+      return card.getBoundingClientRect().width + gap;
     }
-    window.setTimeout(function () { moved = false; }, 0);
-  }
-  rail.addEventListener('pointerup', endDrag);
-  rail.addEventListener('pointercancel', endDrag);
 
-  /* 드래그 직후 이미지 클릭/선택 방지 */
-  rail.addEventListener('click', function (e) {
-    if (moved) { e.preventDefault(); e.stopPropagation(); }
-  }, true);
-  rail.addEventListener('dragstart', function (e) { e.preventDefault(); });
+    var dragging = false, startX = 0, startLeft = 0, moved = false;
 
-  /* 키보드 좌우 이동 */
-  rail.addEventListener('keydown', function (e) {
-    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-    e.preventDefault();
-    var s = step() || 320;
-    rail.scrollBy({ left: e.key === 'ArrowRight' ? s : -s, behavior: 'smooth' });
+    rail.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'touch') return;           /* 터치는 브라우저 기본 스크롤에 맡긴다 */
+      if (typeof e.button === 'number' && e.button !== 0) return;
+      dragging = true; moved = false;
+      startX = e.clientX; startLeft = rail.scrollLeft;
+      rail.classList.add('is-dragging');
+      if (rail.setPointerCapture) { try { rail.setPointerCapture(e.pointerId); } catch (err) {} }
+    });
+
+    rail.addEventListener('pointermove', function (e) {
+      if (!dragging) return;
+      var dx = e.clientX - startX;
+      if (Math.abs(dx) > 4) moved = true;
+      rail.scrollLeft = startLeft - dx;
+    });
+
+    function endDrag(e) {
+      if (!dragging) return;
+      dragging = false;
+      rail.classList.remove('is-dragging');
+      if (e && rail.releasePointerCapture) { try { rail.releasePointerCapture(e.pointerId); } catch (err) {} }
+      var s = step();
+      if (s > 0) {
+        var idx = Math.round(rail.scrollLeft / s);
+        rail.scrollTo({ left: idx * s, behavior: 'smooth' });
+      }
+      window.setTimeout(function () { moved = false; }, 0);
+    }
+    rail.addEventListener('pointerup', endDrag);
+    rail.addEventListener('pointercancel', endDrag);
+
+    /* 드래그 직후 이미지 클릭/선택 방지 */
+    rail.addEventListener('click', function (e) {
+      if (moved) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
+    rail.addEventListener('dragstart', function (e) { e.preventDefault(); });
+
+    /* 키보드 좌우 이동 */
+    rail.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      e.preventDefault();
+      var s = step() || 320;
+      rail.scrollBy({ left: e.key === 'ArrowRight' ? s : -s, behavior: 'smooth' });
+    });
+  });
+
+  /* ---------- 사진·글자 복사/저장 막기 ---------- */
+  document.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+  ['copy', 'cut', 'dragstart', 'selectstart'].forEach(function (t) {
+    document.addEventListener(t, function (e) {
+      /* 갤러리 트랙의 드래그 스크롤은 포인터 이벤트로 처리하므로 여기서 막아도 계속 동작한다 */
+      e.preventDefault();
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    var k = (e.key || '').toLowerCase();
+    if (!(e.ctrlKey || e.metaKey)) return;
+    if (k === 'c' || k === 'x' || k === 's' || k === 'u' || k === 'a' || k === 'p') {
+      e.preventDefault();
+    }
+  });
+  /* 이미지 자체의 브라우저 저장 드래그도 막는다 */
+  Array.prototype.forEach.call(document.images, function (img) {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('dragstart', function (e) { e.preventDefault(); });
   });
 })();
 </script>
