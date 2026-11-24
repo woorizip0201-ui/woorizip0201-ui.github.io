@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우리집 주간보호센터 | 인천 남동구 구월동 노인주간보호센터</title>
+<meta name="description" content="인천 남동구 구월동 우리집 주간보호센터. 넓고 환한 센터 내부 사진과 이용 비용, 오시는 길 안내. 하루 무료 체험. 상담문의 010-4912-1562.">
+<meta name="theme-color" content="#1D4B6B">
+<style>
+  /* 본문·제목 모두 반듯한 고딕(Noto Sans KR) — 페이지에 쓰인 글자만 담은 서브셋, 굵기 100~900 */
+  @font-face{
+    font-family:'Noto Sans KR';
+    src:url('fonts/NotoSansKR-subset.woff2') format('woff2');
+    font-weight:100 900;font-style:normal;font-display:swap;
+  }
+  :root{
+    --ivory:#F4F8FB;
+    --paper:#FFFFFF;
+    --sand:#E3EDF5;
+    --sky:#E8F1F8;
+    --sky-soft:#DAE8F3;
+    --sage:#7E9C77;
+    --sage-soft:#E7EFE2;
+    --forest:#2E5A48;
+    --green:#4E8A31;
+    --blue:#1D4B6B;
+    --blue-deep:#153C53;
+    --deep:#173D57;
+    --ink:#243340;
+    --muted:#5F6E79;
+    --clay:#86A9C4;
+    --line:#D9E5EE;
+    --shadow:0 20px 50px -30px rgba(21,60,83,.45);
+    --radius:22px;
+    --sans:'Noto Sans KR','Pretendard','Apple SD Gothic Neo','Malgun Gothic',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-weight:500;
+    font-size:18px;
+    line-height:1.8;
+    word-break:keep-all;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%;height:auto}
+  p{margin:0 0 1.1em}
+  p:last-child{margin-bottom:0}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .eyebrow{
+    display:inline-block;
+    font-size:.78rem;letter-spacing:.18em;font-weight:800;
+    color:var(--sage);text-transform:uppercase;margin:0 0 14px;
+  }
+  h1,h2,h3{margin:0;line-height:1.3;font-weight:800}
+  h1,h2{font-family:var(--sans);font-weight:800;letter-spacing:-.015em}
+  h2{font-size:clamp(1.95rem,3.5vw,2.75rem);color:var(--deep);line-height:1.34}
+  .section{padding:clamp(56px,7.5vw,100px) 0}
+  .section--paper{background:var(--paper)}
+  .section--sky{background:linear-gradient(180deg,#E2EFF8 0%,#EFF6FB 55%,#F6FAFD 100%)}
+  .section--deep{
+    background:
+      radial-gradient(70% 90% at 100% 0%, rgba(96,150,160,.30) 0%, rgba(96,150,160,0) 62%),
+      linear-gradient(158deg,#14384F 0%, #1B4A63 58%, #1F5352 100%);
+    color:#EAF2F6;
+  }
+  .section-head{max-width:760px;margin-bottom:clamp(24px,3vw,40px)}
+  .section-head .lead{margin-top:12px;color:var(--muted);font-size:1.02rem}
+
+  /* ---------- 히어로 ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(110% 82% at 92% -12%, #D8E9F6 0%, rgba(216,233,246,0) 58%),
+      radial-gradient(70% 62% at -6% 104%, #E9F1EC 0%, rgba(233,241,236,0) 62%),
+      var(--ivory);
+    padding:clamp(24px,3vw,36px) 0 clamp(22px,2.6vw,30px);
+    overflow:hidden;
+  }
+  .hero-inner{position:relative}
+  /* 제목 옆 은은한 로고 배경 */
+  .hero-logo{
+    position:absolute;
+    top:clamp(-38px,-2.8vw,-20px);
+    right:24px;
+    width:clamp(300px,44%,560px);
+    z-index:0;
+    pointer-events:none;
+    opacity:.17;
+    mix-blend-mode:multiply;
+    -webkit-mask-image:linear-gradient(100deg,transparent 0%,rgba(0,0,0,.35) 30%,#000 62%);
+    mask-image:linear-gradient(100deg,transparent 0%,rgba(0,0,0,.35) 30%,#000 62%);
+  }
+  .hero-logo img{width:100%;height:auto}
+  .hero-copy{position:relative;z-index:1}
+  .brandline{
+    display:flex;align-items:center;gap:10px;
+    font-size:.8rem;letter-spacing:.14em;font-weight:800;color:var(--forest);
+    margin-bottom:16px;
+  }
+  .brandline .dot{
+    width:8px;height:8px;border-radius:50%;
+    background:linear-gradient(135deg,#8AB93F 0%,#1B8FD3 100%);
+  }
+  .brandline .sp{flex:1;height:1px;background:linear-gradient(90deg,var(--line) 0%,rgba(217,229,238,0) 100%)}
+  .hero h1{
+    font-size:clamp(2.7rem,5.8vw,4.5rem);
+    color:var(--deep);
+    line-height:1.22;
+    letter-spacing:-.015em;
+    text-shadow:0 1px 0 rgba(255,255,255,.55);
+  }
+  .hero h1 .accent{color:var(--green)}
+  .hero .tagline{
+    margin:16px 0 0;font-size:clamp(1rem,1.7vw,1.16rem);
+    color:var(--forest);font-weight:800;letter-spacing:-.01em;
+  }
+  .chips{
+    display:flex;flex-wrap:wrap;gap:8px;margin:clamp(18px,2.4vw,26px) 0 0;padding:0;list-style:none;
+  }
+  .chips li{
+    font-size:.86rem;font-weight:800;color:var(--blue);
+    background:rgba(255,255,255,.78);border:1px solid #D3E4F0;
+    border-radius:999px;padding:8px 15px;line-height:1.5;
+    box-shadow:0 6px 16px -14px rgba(23,61,87,.5);
+  }
+  .hero-media{position:relative;margin:clamp(20px,2.6vw,30px) 0 0}
+  .hero-media img{
+    width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 66%;
+    border-radius:calc(var(--radius) + 6px);box-shadow:var(--shadow);background:var(--sand);
+  }
+  @media (min-width:861px){
+  .hero-media::after{
+    content:"";position:absolute;inset:0;
+    border-radius:calc(var(--radius) + 6px);
+    border:1px solid rgba(255,255,255,.55);pointer-events:none;
+  }
+  }
+  .hero-badge{
+    position:absolute;left:22px;bottom:20px;
+    background:rgba(255,255,255,.94);backdrop-filter:blur(4px);
+    border-radius:18px;padding:16px 22px;
+    box-shadow:0 24px 44px -26px rgba(21,60,83,.5);max-width:300px;
+  }
+  .hero-badge strong{display:block;color:var(--blue);font-size:1.46rem;font-weight:900;line-height:1.3;letter-spacing:-.01em}
+  .hero-badge span{display:block;font-size:.86rem;color:var(--muted);margin-top:5px;line-height:1.55}
+
+  /* ---------- 상담문의 배너 ---------- */
+  .callband{
+    background:linear-gradient(115deg,#1B4866 0%,#22546F 58%,#2C6059 100%);
+    color:#EFF5F8;padding:clamp(26px,3.4vw,38px) 0;
+  }
+  .callband-in{
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+    gap:12px clamp(24px,4vw,60px);
+  }
+  .cb-label{display:block;font-size:.8rem;letter-spacing:.22em;font-weight:800;color:#A8CBE0;margin:0 0 4px}
+  .cb-num{
+    margin:0;font-size:clamp(2.15rem,5.6vw,3.5rem);font-weight:900;
+    letter-spacing:-.015em;line-height:1.1;color:#fff;font-variant-numeric:tabular-nums;
+  }
+  .cb-side{margin:0;padding:0;list-style:none;font-size:.93rem;font-weight:500;line-height:1.8;color:#D3E3EE}
+  .cb-side li{position:relative;padding-left:15px}
+  .cb-side li::before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:#9FC98A}
+  .cb-side strong{color:#fff;font-weight:800}
+  .callband--mobile{display:none}
+
+  /* ---------- 사진 갤러리 ---------- */
+  .mosaic{display:grid;gap:clamp(10px,1.3vw,18px)}
+  .mrow{display:grid;gap:clamp(10px,1.3vw,18px)}
+  .mrow--a{grid-template-columns:1.9fr 1fr}
+  .mrow--b{grid-template-columns:1fr 1fr 1fr}
+  .mrow--c{grid-template-columns:1.25fr 1fr 1fr}
+  .mrow--d{grid-template-columns:repeat(4,1fr)}
+  .shot{position:relative;margin:0;overflow:hidden;border-radius:20px;background:var(--sand)}
+  .shot img{width:100%;height:100%;object-fit:cover}
+  .mrow--a .shot{height:clamp(320px,36vw,500px)}
+  .mrow--b .shot{height:clamp(250px,27vw,380px)}
+  .mrow--c .shot{height:clamp(220px,23vw,330px)}
+  .mrow--d .shot{height:clamp(190px,20vw,300px)}
+  .shot figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:52px 16px 14px;
+    font-size:.88rem;font-weight:800;letter-spacing:-.01em;line-height:1.5;color:#fff;
+    background:linear-gradient(to top, rgba(18,42,58,.80) 0%, rgba(18,42,58,.34) 52%, rgba(18,42,58,0) 100%);
+  }
+  .mosaic-note{margin-top:18px;font-size:.84rem;font-weight:500;color:var(--muted)}
+
+  /* ---------- 하루 사진 (가로 드래그 캐러셀) ---------- */
+  .rail-hint{
+    display:flex;align-items:center;gap:8px;
+    margin:0 0 clamp(14px,2vw,20px);font-size:.86rem;font-weight:800;color:var(--sage);
+  }
+  .rail-hint .arw{font-size:1rem;line-height:1}
+  .rail{
+    display:flex;gap:clamp(12px,1.5vw,18px);
+    overflow-x:auto;overflow-y:hidden;
+    scroll-snap-type:x mandatory;
+    scroll-padding-left:max(24px, calc((100vw - 1120px) / 2 + 24px));
+    -webkit-overflow-scrolling:touch;
+    padding:4px max(24px, calc((100vw - 1120px) / 2 + 24px)) 14px;
+    cursor:grab;user-select:none;-webkit-user-select:none;
+    scrollbar-width:thin;scrollbar-color:#B9D2E4 rgba(217,229,238,.65);
+  }
+  .rail::-webkit-scrollbar{height:8px}
+  .rail::-webkit-scrollbar-track{background:rgba(217,229,238,.65);border-radius:99px}
+  .rail::-webkit-scrollbar-thumb{background:#B9D2E4;border-radius:99px}
+  .rail.is-dragging{cursor:grabbing;scroll-snap-type:none}
+  .rail.is-dragging img{pointer-events:none}
+  .daycard{
+    flex:0 0 clamp(236px, 29vw, 350px);
+    scroll-snap-align:start;
+    margin:0;
+  }
+  .daycard img{
+    width:100%;aspect-ratio:3/2;object-fit:cover;
+    border-radius:18px;background:var(--sand);
+    -webkit-user-drag:none;user-drag:none;
+  }
+  .daycard figcaption{
+    display:flex;align-items:baseline;gap:8px;
+    margin-top:10px;font-size:.9rem;font-weight:800;color:var(--deep);line-height:1.5;
+  }
+  .daycard .num{
+    font-size:.76rem;font-weight:800;letter-spacing:.02em;
+    color:var(--sage);font-variant-numeric:tabular-nums;
+  }
+  .rail-foot{
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+    gap:14px 24px;margin-top:clamp(10px,1.6vw,18px);
+  }
+  .rail-foot .count{font-size:.84rem;color:var(--muted);margin:0}
+
+  /* ---------- 블로그 버튼 ---------- */
+  .blog-cta{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--blue);color:#fff;text-decoration:none;
+    font-weight:800;font-size:.96rem;letter-spacing:-.01em;
+    padding:14px 24px;border-radius:999px;
+    box-shadow:0 16px 32px -20px rgba(21,60,83,.85);
+    transition:background .18s ease, transform .18s ease;
+  }
+  .blog-cta:hover{background:var(--blue-deep);transform:translateY(-1px)}
+  .blog-cta .ico{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:22px;height:22px;border-radius:6px;background:#03C75A;
+    font-size:.72rem;font-weight:900;color:#fff;letter-spacing:0;
+  }
+  .blog-cta .arw{font-size:1rem;line-height:1}
+  .blog-link--dark{
+    display:inline-flex;align-items:center;gap:8px;margin-top:18px;
+    color:#CFE0EC;font-size:.92rem;font-weight:800;text-decoration:none;
+    border-bottom:1px solid rgba(207,224,236,.45);padding-bottom:2px;
+  }
+  .blog-link--dark:hover{color:#fff;border-bottom-color:#fff}
+
+  /* ---------- 비용 ---------- */
+  .cost-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,56px);align-items:start}
+  .cost table{
+    width:100%;border-collapse:collapse;background:var(--paper);
+    border:1px solid #DCE7F0;border-radius:16px;overflow:hidden;font-variant-numeric:tabular-nums;
+  }
+  .cost caption{caption-side:top;text-align:left;font-size:.85rem;font-weight:500;color:var(--muted);padding-bottom:10px}
+  .cost th,.cost td{padding:15px 18px;text-align:left;font-size:.97rem;border-bottom:1px solid #DCE7F0}
+  .cost thead th{background:var(--sky);color:var(--blue);font-size:.82rem;letter-spacing:.08em;font-weight:800}
+  .cost tbody tr:last-child td,.cost tbody tr:last-child th{border-bottom:0}
+  .cost td.num{text-align:right;font-weight:800;color:var(--deep)}
+  .cost tbody th{font-weight:700}
+  .cost-notes{margin:0;padding:0;list-style:none}
+  .cost-notes li{position:relative;padding-left:18px;margin-bottom:11px;font-size:.93rem;font-weight:500;color:#46545F}
+  .cost-notes li::before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--sage)}
+
+  /* ---------- 오시는 길 ---------- */
+  .contact{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(26px,4vw,56px);align-items:start}
+  .contact .label{font-size:.78rem;letter-spacing:.18em;font-weight:800;color:#A8CBE0;margin:0 0 8px}
+  .contact .big{
+    font-size:clamp(1.9rem,4.4vw,2.8rem);font-weight:900;color:#fff;
+    letter-spacing:-.01em;line-height:1.2;margin:0;font-variant-numeric:tabular-nums;
+  }
+  .contact .big span{display:block;font-size:clamp(1rem,1.8vw,1.2rem);color:#CFE0EC;font-weight:800;margin-top:10px;letter-spacing:0}
+  .contact .hours{font-size:.94rem;font-weight:500;color:#C2D6E4;margin-top:12px}
+  .addr-box{border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:24px 26px;background:rgba(255,255,255,.04)}
+  .addr-box .k{font-size:.76rem;letter-spacing:.16em;font-weight:800;color:#A8CBE0;margin:0 0 6px}
+  .addr-box .v{font-size:1.02rem;color:#fff;font-weight:800;line-height:1.6;margin:0}
+  .addr-box .v + .k{margin-top:18px}
+  .addr-box .v small{display:block;font-weight:600;color:#C2D6E4;font-size:.87rem;margin-top:3px}
+
+  /* ---------- 푸터 ---------- */
+  .footer{background:#102C3B;color:#9FB3BF;padding:34px 0 40px;font-size:.87rem;line-height:1.9}
+  .footer .row{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:baseline}
+  .footer strong{color:#E7EEF2;font-size:.96rem;font-weight:800;letter-spacing:-.01em}
+  .footer a{color:#C2D6E4;text-decoration:none;border-bottom:1px solid rgba(194,214,228,.4)}
+  .footer a:hover{color:#fff;border-bottom-color:#fff}
+  .footer-logo{
+    width:146px;margin:0 0 16px;background:#fff;border-radius:14px;
+    padding:10px 14px;box-shadow:0 10px 24px -18px rgba(0,0,0,.9);
+  }
+
+  /* ---------- 반응형 ---------- */
+  @media (max-width:1000px){
+    .mrow--d{grid-template-columns:1fr 1fr}
+    .cost-wrap{grid-template-columns:1fr}
+  }
+  @media (max-width:860px){
+    body{font-size:17px}
+    .hero-logo{
+      top:-52px;right:0;width:min(54%,210px);
+      opacity:.12;
+      -webkit-mask-image:linear-gradient(100deg,transparent 0%,rgba(0,0,0,.25) 34%,#000 72%);
+      mask-image:linear-gradient(100deg,transparent 0%,rgba(0,0,0,.25) 34%,#000 72%);
+    }
+    .hero h1{font-size:clamp(2.35rem,9.4vw,3.2rem);line-height:1.24}
+    .brandline{font-size:.72rem;letter-spacing:.1em;gap:8px}
+    .hero-media img{aspect-ratio:4/3}
+    .hero-badge{
+      position:static;max-width:none;margin:12px 0 0;padding:13px 16px;
+      background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:none;
+    }
+    .hero-badge strong{font-size:1.24rem;line-height:1.3}
+    .hero-badge span{font-size:.84rem;margin-top:4px}
+    .contact{grid-template-columns:1fr}
+    .mrow,.mrow--a,.mrow--b,.mrow--c,.mrow--d{grid-template-columns:1fr}
+    .mrow--a .shot,.mrow--b .shot,.mrow--c .shot,.mrow--d .shot{height:auto}
+    .shot img{aspect-ratio:4/3;height:auto}
+    .rail-foot{justify-content:flex-start}
+    .footer-logo{width:128px}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 20px}
+    .cb-num{font-size:clamp(2rem,11vw,2.6rem)}
+    .cost th,.cost td{padding:13px 12px;font-size:.9rem}
+    .daycard{flex:0 0 78vw}
+    .rail{padding-left:20px;padding-right:20px}
+    .blog-cta{width:100%;justify-content:center}
+    .hero-logo{width:min(56%,202px);right:0}
+    .hero h1{font-size:clamp(2.25rem,10.2vw,3rem)}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} .blog-cta{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- ================= 히어로 ================= -->
+<header class="hero">
+  <div class="wrap hero-inner">
+
+    <span class="hero-logo" aria-hidden="true"><img src="images/logo-bg.png" alt="" width="1370" height="817"></span>
+
+    <div class="hero-copy">
+      <div class="brandline">
+        <span class="dot"></span>
+        <span>구월 우리집 주간보호센터 · 인천 남동구</span>
+        <span class="sp"></span>
+      </div>
+
+      <h1>부모님의 하루를,<br><span class="accent">우리집</span>에서.</h1>
+      <p class="tagline">아침에 모시러 가서 저녁에 집 앞까지</p>
+
+      <ul class="chips">
+        <li>하루 무료 체험</li>
+        <li>토·공휴일 정상 운영</li>
+        <li>송영 · 식사 · 투약관리</li>
+      </ul>
+    </div>
+
+    <figure class="hero-media">
+      <img src="images/hero-scene.jpg"
+           alt="아치 입구에서 창가까지, 긴 식탁과 라운지 소파가 한눈에 들어오는 센터 홀 전체 풍경"
+           width="1600" height="1200" fetchpriority="high">
+      <figcaption class="hero-badge">
+        <strong>하루 무료 체험</strong>
+        <span>체험하실 때<br>어르신 등록도 함께 진행됩니다.</span>
+      </figcaption>
+    </figure>
+
+  </div>
+</header>
+
+<!-- ================= 상담문의 배너 ================= -->
+<section class="callband callband--full" aria-label="상담문의 전화번호">
+  <div class="wrap">
+    <div class="callband-in">
+      <div>
+        <span class="cb-label">상담문의</span>
+        <p class="cb-num">010-4912-1562</p>
+      </div>
+      <ul class="cb-side">
+        <li><strong>24시간</strong> 상담 가능 · 점심시간에도 상담합니다</li>
+        <li>센터 대표전화 032-462-7877</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 센터 사진 ================= -->
+<section class="section section--paper" aria-labelledby="space">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">센터 둘러보기</p>
+      <h2 id="space">사진으로 먼저 둘러보세요</h2>
+    </div>
+
+    <div class="mosaic">
+      <div class="mrow mrow--a">
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-lounge-wide.jpg" alt="소파와 긴 테이블, 대형 TV가 놓인 넓은 라운지 전경" width="1600" height="1200">
+          <figcaption>카페처럼 넓은 라운지</figcaption>
+        </figure>
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-massage.jpg" alt="큰 창을 등지고 놓인 안마의자 세 대와 화분" width="1100" height="1467">
+          <figcaption>창가 안마의자</figcaption>
+        </figure>
+      </div>
+
+      <div class="mrow mrow--b">
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-arch.jpg" alt="둥근 아치 입구와 화분 너머로 보이는 홀" width="1400" height="1050">
+          <figcaption>아치 입구와 플랜테리어</figcaption>
+        </figure>
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-sling.jpg" alt="천장 레일에서 내려온 워킹 슬링과 아치 거울, 소파" width="1400" height="1050">
+          <figcaption>워킹 슬링 보행 재활 레일</figcaption>
+        </figure>
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-glass.jpg" alt="유리 파티션과 화분, 그 너머로 보이는 라운지와 데스크" width="1100" height="1467">
+          <figcaption>유리 파티션 너머 라운지</figcaption>
+        </figure>
+      </div>
+
+      <div class="mrow mrow--c">
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-lounge-window.jpg" alt="소파와 테이블, 대형 화면과 창가 자리가 이어지는 라운지 전경" width="1500" height="1125">
+          <figcaption>소파와 창가 자리</figcaption>
+        </figure>
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-handrail.jpg" alt="초록 루버 벽면을 따라 설치된 흰색 안전 손잡이와 복도" width="1200" height="900">
+          <figcaption>복도 안전 손잡이</figcaption>
+        </figure>
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-sling-marble.jpg" alt="천장 보행 재활 레일과 대리석 세면대, 아치 거울" width="1200" height="900">
+          <figcaption>보행 재활 레일과 세면대</figcaption>
+        </figure>
+      </div>
+
+      <div class="mrow mrow--d">
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-tables.jpg" alt="긴 테이블과 의자가 나란히 놓인 프로그램·식사 공간" width="1200" height="900">
+          <figcaption>긴 식탁과 프로그램 자리</figcaption>
+        </figure>
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-ring.jpg" alt="천장의 링 조명 아래 소파와 테이블이 놓인 라운지" width="1200" height="900">
+          <figcaption>링 조명 아래 라운지</figcaption>
+        </figure>
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-glass-garden.jpg" alt="아치 모양 유리 파티션 안쪽에 자란 실내 화단" width="1100" height="1467">
+          <figcaption>아치 유리와 실내 화단</figcaption>
+        </figure>
+        <figure class="shot">
+          <img loading="lazy" src="images/sp-plants.jpg" alt="잎이 큰 화분 옆 창가에 놓인 안마의자" width="1100" height="825">
+          <figcaption>화분 옆 안마의자</figcaption>
+        </figure>
+      </div>
+    </div>
+    <p class="mosaic-note">사진은 센터 내부를 촬영한 것입니다.</p>
+  </div>
+</section>
+
+<!-- ================= 하루의 사진 (가로 드래그) ================= -->
+<section class="section section--sky" aria-labelledby="day">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">프로그램 · 식사 · 행사</p>
+      <h2 id="day">하루가 이렇게 흘러갑니다</h2>
+      <p class="rail-hint"><span class="arw">←</span> 사진을 옆으로 밀어 10장 모두 보기 <span class="arw">→</span></p>
+    </div>
+  </div>
+
+  <div class="rail" id="dayRail" role="region" aria-label="하루 활동 사진 10장, 옆으로 밀어 보기" tabindex="0">
+    <figure class="daycard">
+      <img loading="eager" draggable="false" src="images/day-01-body.jpg" alt="어르신들이 둥글게 둘러앉아 재활 링을 들고 어깨 운동을 하고 계신 모습" width="1000" height="667">
+      <figcaption><span class="num">01</span>신체 재활</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="eager" draggable="false" src="images/day-02-equip.jpg" alt="창가를 따라 놓인 재활 자전거에서 운동하고 계신 어르신들" width="1000" height="667">
+      <figcaption><span class="num">02</span>재활 기구 운동</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="eager" draggable="false" src="images/day-03-mind.jpg" alt="테이블에 둘러앉아 만다라 학습지를 색칠하며 인지 활동을 하고 계신 어르신들" width="1000" height="667">
+      <figcaption><span class="num">03</span>인지 재활</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="eager" draggable="false" src="images/day-04-fun.jpg" alt="긴 테이블에 둘러앉아 보드게임을 함께 즐기고 계신 어르신들" width="1000" height="666">
+      <figcaption><span class="num">04</span>여가 프로그램</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="eager" draggable="false" src="images/day-05-out.jpg" alt="카페 테이블에 둘러앉아 음료를 나누며 사회적응 훈련을 하고 있는 모습" width="1000" height="667">
+      <figcaption><span class="num">05</span>사회적응 · 카페 나들이</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="eager" draggable="false" src="images/day-06-meal.jpg" alt="점심 시간, 긴 테이블에서 직접 조리한 식사를 하고 계신 어르신들" width="1000" height="667">
+      <figcaption><span class="num">06</span>직접 조리한 한 끼</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="eager" draggable="false" src="images/day-07-snack.jpg" alt="접시마다 담아낸 수제 간식과 과일, 디저트가 차려진 모습" width="1000" height="666">
+      <figcaption><span class="num">07</span>수제 간식과 차</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="eager" draggable="false" src="images/day-08-party.jpg" alt="생신잔치 케이크 상 앞에서 꽃목걸이와 왕관을 하고 앉아 계신 어르신들" width="966" height="644">
+      <figcaption><span class="num">08</span>생신잔치</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="eager" draggable="false" src="images/day-09-table.jpg" alt="생신을 맞은 어르신 네 분이 왕관과 꽃목걸이를 하고 앉아 있는 모습" width="1000" height="667">
+      <figcaption><span class="num">09</span>생신 주인공들</figcaption>
+    </figure>
+    <figure class="daycard">
+      <img loading="eager" draggable="false" src="images/day-10-together.jpg" alt="직원과 어르신이 함께 노래를 부르며 즐거운 시간을 보내는 모습" width="1000" height="666">
+      <figcaption><span class="num">10</span>노래하고 함께하는 하루</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap rail-foot">
+    <p class="count">사진 10장 · 마우스로 끌거나 옆으로 밀어서 보세요</p>
+    <a class="blog-cta" href="https://m.blog.naver.com/icn_ourhouse" target="_blank" rel="noopener noreferrer">
+      <span class="ico" aria-hidden="true">N</span>
+      네이버 블로그에서 더 많은 이야기 보기
+      <span class="arw" aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= 비용 ================= -->
+<section class="section section--paper" aria-labelledby="cost">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">이용 비용</p>
+      <h2 id="cost">하루 이용료</h2>
+    </div>
+
+    <div class="cost-wrap">
+      <div class="cost">
+        <table>
+          <caption>2026년 기준 · 하루 8시간 이상 ~ 10시간 미만</caption>
+          <thead>
+            <tr>
+              <th scope="col">등급</th>
+              <th scope="col" style="text-align:right">급여비용</th>
+              <th scope="col" style="text-align:right">본인부담금</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">3등급</th><td class="num">59,640원</td><td class="num">8,946원</td></tr>
+            <tr><th scope="row">4등급</th><td class="num">58,010원</td><td class="num">8,702원</td></tr>
+            <tr><th scope="row">5등급</th><td class="num">56,360원</td><td class="num">8,454원</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <ul class="cost-notes">
+          <li>일반 본인부담률 15% 기준 (감경 9%·6%, 면제 0%)</li>
+          <li>토요일 추가 가산 없음 · 공휴일·저녁 시간은 가산 기준 적용</li>
+          <li>등급·이용시간·식사재료비에 따라 달라지며, 정확한 금액은 상담으로 안내합니다.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 오시는 길 ================= -->
+<section class="section section--deep" aria-labelledby="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" style="color:#9EC4B4">오시는 길 · 상담</p>
+      <h2 id="contact" style="color:#fff">전화 한 통이면 충분합니다</h2>
+    </div>
+
+    <div class="contact">
+      <div>
+        <p class="label">상담문의</p>
+        <p class="big">010-4912-1562
+          <span>센터 대표전화 032-462-7877</span>
+        </p>
+        <p class="hours">24시간 상담 가능 · 평일 상담 오전 8시 ~ 오후 6시</p>
+        <a class="blog-link--dark" href="https://m.blog.naver.com/icn_ourhouse" target="_blank" rel="noopener noreferrer">
+          센터 네이버 블로그 보기 <span aria-hidden="true">→</span>
+        </a>
+      </div>
+      <div class="addr-box">
+        <p class="k">주소</p>
+        <p class="v">인천광역시 남동구 호구포로 832, 4층
+          <small>구월동 모래내시장 인근 · 인천시청역, 길병원에서 가까운 위치</small>
+        </p>
+        <p class="k">상담 가능 지역</p>
+        <p class="v">남동구 전역
+          <small>구월·만수·간석·논현동을 비롯해 주안·동암·부평에서도 상담하실 수 있습니다.</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <img class="footer-logo" src="images/logo-bg.png" alt="우리집 주간보호센터 로고" width="1370" height="817">
+    <div class="row">
+      <strong>구월 우리집 주간보호센터</strong>
+      <span>인천광역시 남동구 호구포로 832, 4층</span>
+      <span>032-462-7877</span>
+      <span>010-4912-1562</span>
+      <a href="https://m.blog.naver.com/icn_ourhouse" target="_blank" rel="noopener noreferrer">네이버 블로그</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var rail = document.getElementById('dayRail');
+  if (!rail) return;
+
+  function step() {
+    var card = rail.querySelector('.daycard');
+    if (!card) return 0;
+    var gap = parseFloat(getComputedStyle(rail).columnGap || getComputedStyle(rail).gap || 0) || 0;
+    return card.getBoundingClientRect().width + gap;
+  }
+
+  /* PC: 마우스로 끌어서 넘기기 (터치는 브라우저 기본 스크롤) */
+  var dragging = false, startX = 0, startLeft = 0, moved = false;
+
+  rail.addEventListener('pointerdown', function (e) {
+    if (e.pointerType === 'touch') return;
+    if (typeof e.button === 'number' && e.button !== 0) return;
+    dragging = true; moved = false;
+    startX = e.clientX; startLeft = rail.scrollLeft;
+    rail.classList.add('is-dragging');
+    if (rail.setPointerCapture) { try { rail.setPointerCapture(e.pointerId); } catch (err) {} }
+  });
+
+  rail.addEventListener('pointermove', function (e) {
+    if (!dragging) return;
+    var dx = e.clientX - startX;
+    if (Math.abs(dx) > 4) moved = true;
+    rail.scrollLeft = startLeft - dx;
+  });
+
+  function endDrag(e) {
+    if (!dragging) return;
+    dragging = false;
+    rail.classList.remove('is-dragging');
+    if (e && rail.releasePointerCapture) { try { rail.releasePointerCapture(e.pointerId); } catch (err) {} }
+    /* 놓은 자리에서 가장 가까운 사진으로 정리 */
+    var s = step();
+    if (s > 0) {
+      var idx = Math.round(rail.scrollLeft / s);
+      rail.scrollTo({ left: idx * s, behavior: 'smooth' });
+    }
+    window.setTimeout(function () { moved = false; }, 0);
+  }
+  rail.addEventListener('pointerup', endDrag);
+  rail.addEventListener('pointercancel', endDrag);
+
+  /* 드래그 직후 이미지 클릭/선택 방지 */
+  rail.addEventListener('click', function (e) {
+    if (moved) { e.preventDefault(); e.stopPropagation(); }
+  }, true);
+  rail.addEventListener('dragstart', function (e) { e.preventDefault(); });
+
+  /* 키보드 좌우 이동 */
+  rail.addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    e.preventDefault();
+    var s = step() || 320;
+    rail.scrollBy({ left: e.key === 'ArrowRight' ? s : -s, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
